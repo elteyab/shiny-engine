@@ -6,22 +6,53 @@
         All of your menus</p>
     </div>
     <div class="card-body">
-      <div class="row">
-        <div class="col-6">
-          <label for="description" class="form-label">Description:</label>
-          <input type="text" class="form-control" id="description" placeholder="Enter description" name="description">
-        </div>
+      <form [formGroup]="businessForm" (ngSubmit)="onSubmit()">
 
-        <div class="col-3">
-          <label for="start_date" class="form-label">Start Date:</label>
-          <input type="date" class="form-control" id="start_date" placeholder="Enter Start Date" name="start_date">
-        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="description" class="form-label">Description:</label>
+            <input type="text" class="form-control" formControlName="description" id="description"
+                   placeholder="Enter description" name="description">
+          </div>
 
-        <div>
-          <p>Check the box below to set special hours for closure dates above</p>
-        </div>
+          <div class="col-3">
+            <label for="start_date" class="form-label">Start Date:</label>
+            <input type="date" class="form-control" formControlName="start_date" id="start_date"
+                   placeholder="Enter Start Date" name="start_date">
+          </div>
 
-      </div>
+          <div formArrayName="quantities">
+            <p>Check the box below to set special hours for closure dates above</p>
+            <div class="row" *ngFor="let item of additionalHour().controls; let i=index" [formGroupName]="i">
+              <div class="row">
+                <div class="col-2">
+                  Add Special Hours:
+                </div>
+                <div class="col-3">
+                  <input type="time" formControlName="special_hours" class="form-control" id="special_hours"
+                         name="special_hours">
+                </div>
+                -
+                <div class="col-3">
+                  <input type="time" formControlName="special_hours2" class="form-control" id="special_hours2"
+                         name="special_hours2">
+                </div>
+
+                <div class="col-1">
+                  <button (click)="removeAdditional(i)" class="btn btn-danger"><span class="bi bi-trash"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="button" (click)="addAdditional()" class=" btn btn-outline-info">Add additional hour</button>
+            </div>
+
+          </div>
+
+
+        </div>
+      </form>
     </div>
     <div class="card-footer">Footer</div>
   </div>

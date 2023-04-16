@@ -6,6 +6,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BusinessHoursComponent} from './Pages/Business/business-hours/business-hours.component';
 import {AppRoutingModule} from './app-routing.module';
 import {RouterModule} from "@angular/router";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,8 @@ import {RouterModule} from "@angular/router";
     BrowserModule,
     NgbModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
 // AppRoutingModule
 
   ],
