@@ -25,6 +25,7 @@ export class AllDayMenuComponent {
     });
 // this.workHoursForm2 = this
     this.daysTime = this.demoData();
+    this.daysTime = this.daysTime.days;
     console.log("days: ", this.demoData())
   }
 
@@ -32,7 +33,7 @@ export class AllDayMenuComponent {
     return {
       "days": [
         {
-          "day": "1",
+          "day": "Monday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15: 20",
@@ -40,7 +41,7 @@ export class AllDayMenuComponent {
           "isClosed": true
         },
         {
-          "day": "2",
+          "day": "Tuesday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15: 20",
@@ -48,7 +49,15 @@ export class AllDayMenuComponent {
           "isClosed": false
         },
         {
-          "day": "3",
+          "day": "Wednesday",
+          "morningStartTime": "09:30",
+          "morningCloseTime": "09:30",
+          "afterNoonStartTime": "15: 20",
+          "afterNoonCloseTime": "10:19",
+          "isClosed": true
+        },
+        {
+          "day": "Thursday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15: 20",
@@ -56,7 +65,7 @@ export class AllDayMenuComponent {
           "isClosed": false
         },
         {
-          "day": "4",
+          "day": "Friday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15: 20",
@@ -64,7 +73,7 @@ export class AllDayMenuComponent {
           "isClosed": false
         },
         {
-          "day": "5",
+          "day": "Saturday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15: 20",
@@ -72,15 +81,7 @@ export class AllDayMenuComponent {
           "isClosed": false
         },
         {
-          "day": "6",
-          "morningStartTime": "09:30",
-          "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
-          "afterNoonCloseTime": "10:19",
-          "isClosed": false
-        },
-        {
-          "day": "7",
+          "day": "Sunday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15: 20",
