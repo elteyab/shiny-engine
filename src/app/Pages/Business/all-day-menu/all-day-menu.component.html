@@ -9,17 +9,18 @@
         <div class="row pt-3">
           <div class="col-1">{{item.day}}</div>
           <div class="col-1"><input type="time" formControlName="morningStartTime"
-                                    [(ngModel)]="daysTime.morningStartTime"></div>
+                                    [(ngModel)]="item.morningStartTime"></div>
           <div class="col-1"><input type="time" formControlName="morningCloseTime"
-                                    [(ngModel)]="daysTime.morningCloseTime"></div>
+                                    [(ngModel)]="item.morningCloseTime"></div>
           <div class="col-1"><input type="time" formControlName="afterNoonStartTime"
-                                    [(ngModel)]="daysTime.afterNoonStartTime">
+                                    [(ngModel)]="item.afterNoonStartTime">
           </div>
           <div class="col-1"><input type="time" formControlName="afterNoonCloseTime"
-                                    [(ngModel)]="daysTime.afterNoonCloseTime">
+                                    [(ngModel)]="item.afterNoonCloseTime">
           </div>
           <div class="col-2"><input class="form-check-input ms-lg-1" formControlName="isClosed"
-                                    [(ngModel)]="daysTime.isClosed"
+                                    [(ngModel)]="item.isClosed"
+                                    [value]="item.isClosed"
                                     type="checkbox">
             <span class="pt-0">Closed</span></div>
         </div>
