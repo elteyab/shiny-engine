@@ -1,0 +1,37 @@
+<ng-container>
+  <div class="card">
+    <div class="card-header">
+      <h2>Open Hours For Menu</h2>
+      <p>Hours for the menu "All Day Menu". Hours may be different when shown to customers.</p>
+    </div>
+    <form [formGroup]="workHoursForm2" (ngSubmit)="submit()">
+      <!--    <div class="card-body" *ngFor="let item of daysTime">-->
+      <div class="card-body">
+        <div class="row">
+          <div class="col-1">Monday {{daysTime.days[0].day}}</div>
+          <!--        <div class="col-1"><input type="time" formControlName="morningStartTime" [(ngModel)]="workHoursForm.morningStartTime"></div>-->
+          <div class="col-1"><input type="time" formControlName="morningStartTime"></div>
+          <div class="col-1"><input type="time" name="morningCloseTime"></div>
+          <div class="col-1"><input type="time" name="afterNoonStartTime"></div>
+          <div class="col-1"><input type="time" name="afterNoonCloseTime"></div>
+          <div class="col-2"><input class="form-check-input ms-lg-1" formControlName="isClosed"
+                                    type="checkbox">
+            <span class="pt-0">Closed</span></div>
+        </div>
+
+        <div class="row pt-4">
+          <div class="col-1">Monday</div>
+          <div class="col-1"><input type="time" name="morningStartTime"></div>
+          <div class="col-1"><input type="time" name="morningCloseTime"></div>
+          <div class="col-1"><input type="time" name="afterNoonStartTime"></div>
+          <div class="col-1"><input type="time" name="afterNoonCloseTime"></div>
+          <div class="col-2"><input class="form-check-input ms-lg-1" type="checkbox">
+            <span class="pt-0">Closed</span></div>
+        </div>
+      </div>
+    </form>
+    <div class="card-footer">Footer</div>
+  </div>
+
+
+</ng-container>

@@ -24,8 +24,8 @@ export class BusinessHoursComponent {
 
   newAdditional(): FormGroup {
     return this.fb.group({
-      qty: '',
-      price: '',
+      special_hours: '',
+      special_hours2: '',
     })
   }
 
