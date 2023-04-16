@@ -38,7 +38,7 @@ export class AllDayMenuComponent {
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
-          "isClosed": true
+          isClosed: 1
         },
         {
           "day": "Tuesday",
@@ -46,7 +46,7 @@ export class AllDayMenuComponent {
           "morningCloseTime": "09:30",
           "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
-          "isClosed": false
+          isClosed: false
         },
         {
           "day": "Wednesday",

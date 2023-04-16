@@ -18,8 +18,9 @@
           <div class="col-1"><input type="time" formControlName="afterNoonCloseTime"
                                     [(ngModel)]="item.afterNoonCloseTime">
           </div>
-          <div class="col-2"><input class="form-check-input ms-lg-1" formControlName="isClosed"
-                                    [checked]="item.isClosed === 'true'"
+          <div class="col-2"><input class="form-check-input ms-lg-1"
+                                    [checked]="item.isClosed"
+                                    [value]="item.isClosed"
                                     type="checkbox">
             <span class="pt-0">Closed</span></div>
         </div>
