@@ -36,7 +36,7 @@ export class AllDayMenuComponent {
           "day": "Monday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
+          "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
           "isClosed": 'true'
         },
@@ -44,7 +44,7 @@ export class AllDayMenuComponent {
           "day": "Tuesday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
+          "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
           "isClosed": false
         },
@@ -52,7 +52,7 @@ export class AllDayMenuComponent {
           "day": "Wednesday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
+          "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
           "isClosed": true
         },
@@ -60,7 +60,7 @@ export class AllDayMenuComponent {
           "day": "Thursday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
+          "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
           "isClosed": false
         },
@@ -68,7 +68,7 @@ export class AllDayMenuComponent {
           "day": "Friday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
+          "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
           "isClosed": false
         },
@@ -76,7 +76,7 @@ export class AllDayMenuComponent {
           "day": "Saturday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
+          "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
           "isClosed": false
         },
@@ -84,7 +84,7 @@ export class AllDayMenuComponent {
           "day": "Sunday",
           "morningStartTime": "09:30",
           "morningCloseTime": "09:30",
-          "afterNoonStartTime": "15: 20",
+          "afterNoonStartTime": "15:20",
           "afterNoonCloseTime": "10:19",
           "isClosed": false
         },
