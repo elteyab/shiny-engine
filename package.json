@@ -1,11 +1,11 @@
 {
   "name": "ang-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href https://Tayeb-Ali.github.io/shiny-engine/",
+    "build:prod": "ng build --configuration production --base-href https://elteyab.github.io/shiny-engine/",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
